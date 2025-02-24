@@ -20,7 +20,6 @@ mongoose
 app.use("/api/recipes", recipeRoutes);
 app.get("/", (req, res) => res.send("Backend is running!"));
 
-// Ensure the server listens on Vercel
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
